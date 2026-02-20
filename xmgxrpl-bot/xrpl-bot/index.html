@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>XRPL Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>XRPL Trading Bot</h1>
+
+<!-- SEED -->
+
+<div class="panel">
+
+<h3>Seed Phrase</h3>
+
+<div class="seed-grid" id="seedGrid"></div>
+
+<button onclick="saveSeed()">Save Seed</button>
+
+</div>
+
+<!-- SETTINGS -->
+
+<div class="panel">
+
+<h3>Settings</h3>
+
+<select id="pair">
+  <option value="RUUSD">RUUSD / XRP</option>
+  <option value="SOLO">SOLO / XRP</option>
+  <option value="USDC">USDC / XRP</option>
+  <option value="MAG">MAG / XRP</option>
+</select>
+
+<div class="sptext">
+  <p>Procent Spread(%)<p>
+</div>
+
+<input id="spread" type="number" step="0.01" value="0.3" placeholder="Spread %">
+
+</div>
+
+<!-- CONTROL -->
+
+<div class="panel">
+
+  <div class = "row">
+<button onclick="connect()">Connect</button>
+<button onclick="start()">Start</button>
+<button onclick="stop()" class="red">Stop</button>
+
+  </div>
+<div id="status">OFFLINE</div>
+
+</div>
+
+<!-- LOG -->
+
+<div class="panel">
+
+<pre id="log"></pre>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

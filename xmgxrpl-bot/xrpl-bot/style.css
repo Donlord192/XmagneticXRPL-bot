@@ -1,0 +1,174 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* Layout */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Panels */
+
+.panel {
+  background: #ffffff;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* Inputs */
+
+input,
+select {
+  width: 100%;
+  padding: 9px 10px;
+  margin: 6px 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  transition: 0.15s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* Buttons */
+
+button {
+  padding: 9px 16px;
+  border: none;
+  background: #f0b90b; /* Binance Yellow */
+  color: #111827;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+button:hover {
+  background: #e6a800;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.red {
+  background: #ef4444;
+  color: white;
+}
+
+button.red:hover {
+  background: #dc2626;
+}
+
+/* Grid for Seed */
+
+.seed-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.seed-grid input {
+  text-align: center;
+  font-size: 13px;
+  padding: 7px;
+}
+
+/* Status */
+
+#status {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Log */
+
+#log {
+  background: #0b0e11;
+  color: #e5e7eb;
+  height: 220px;
+  overflow-y: auto;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #1f2937;
+  line-height: 1.4;
+  font-family: Consolas, monospace;
+}
+
+/* Scrollbar */
+
+#log::-webkit-scrollbar {
+  width: 6px;
+}
+
+#log::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+
+/* Small text */
+
+.sptext {
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Row layout */
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.row > * {
+  flex: 1;
+}
+
+/* Header bar (optional) */
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
